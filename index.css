@@ -1,0 +1,29 @@
+div {
+    background-color: lightgrey;
+}
+
+/* unspecified link */
+a {
+    text-decoration: none;
+    /* text-shadow: 3px 2px grey; */
+}
+
+/* unvisited link */
+a:link {
+    color: blue;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: darkblue;
+}
+
+/* selected link */
+a:active {
+    color: darkgreen;
+}
