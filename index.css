@@ -1,52 +1,196 @@
+html {
+    scroll-behavior: smooth;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;    
+}
+
 body {
-    background-color: white;
-}
-
-div {
-
-}
-
-.section {
-    background-color: white;
-    box-shadow: 0px 5px 5px 3px lightgrey;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 5px;
-}
-
-ul {
-    border-top: 1px solid lightgrey;
+    text-align: left;
+    background-color: #F1F1F1;
+    overflow-y: hidden;
+    height: 100vh;
+    border: 0px;
+    margin: 0px;
     padding: 0px;
 }
 
-li {
-    border-bottom: 1px solid lightgrey;
-    list-style-type: none;
-    line-height: 200%;
+.section {
+    display: inline-block;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
-/* unspecified link */
-a {
-    text-decoration: none;
-    /* text-shadow: 3px 2px grey; */
+.section-box {
+    width: 80vw;
+    height: 80vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 0px;
+    background-color: white;
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,.1);
+    -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,.1);
 }
 
-/* unvisited link */
-a:link {
-    color: blue;
+.nav {
+    width: 10vw;
+    position: fixed;
+    top: 0px;
+    height: 100vh;
+    line-height: 100vh;
+    text-align: center;
 }
 
-/* visited link */
-a:visited {
-    color: green;
+.nav-dot {
+    display: inline-block;
+    vertical-align: middle;
+    width: 5vw;
+    height: 20vh;
+    background-color: #3498DB;
+    line-height: 20vh;
+    border-radius: 5vw;
+    padding: 0px;
+    overflow: hidden;
+    user-select: none;
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,.1);
+    -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,.1);
 }
 
-/* mouse over link */
-a:hover {
-    color: darkblue;
+.nav-dot:hover {
+    box-shadow: 0px 10px 20px 5px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0px 10px 20px 5px rgba(0,0,0,.1);
+    -moz-box-shadow: 0px 10px 20px 5px rgba(0,0,0,.1);
 }
 
-/* selected link */
-a:active {
-    color: darkgreen;
+.material-icons {
+    line-height: 20vh;
+    font-size: 30px;
+    color: white;
+}
+
+#nav-left {
+    left: 0px;
+}
+
+#nav-right {
+    right: 0px;
+}
+
+.button {
+    margin: 1vw;
+    width: 20vw;
+    display: inline-block;
+    background-color: green;
+    height: 5vw;
+    line-height: 5vw;
+    color: white;
+    font-size: 2vw;
+    border-radius: 5vw;
+}
+
+.button:hover {
+    background-color: darkgreen;
+    user-select: none;
+}
+
+.back-button {
+    background-color: red;
+}
+
+.back-button:hover {
+    background-color: darkred;
+}
+
+.tag {
+    width: 10vw;
+    height: 10vw;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.tag:hover {
+    background-color: seashell;
+}
+
+.tag span {
+    vertical-align: middle;
+}
+
+.favicon {
+    width: 50%;
+    height: 50%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 25%;
+    top: 25%;
+}
+
+#canvas {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Google */
+
+#mailgooglecom {
+    background-image: url('https://ssl.gstatic.com/images/branding/product/2x/gmail_32dp.png');
+}
+
+#drivegooglecom {
+    background-image: url('https://ssl.gstatic.com/images/branding/product/2x/drive_32dp.png');
+}
+
+#admingooglecom {
+    background-image: url('https://ssl.gstatic.com/images/branding/product/1x/admin_512dp.png');
+}
+
+#alertsgooglecom {
+    background-image: url('https://ssl.gstatic.com/images/branding/product/1x/alerts_512dp.png');
+}
+
+#workgooglecom {
+    background-image: url('https://ssl.gstatic.com/images/branding/product/1x/android_for_work_512dp.png');
+}
+
+#sitesgooglecom {
+    background-image: url('https://ssl.gstatic.com/images/branding/product/1x/atari_512dp.png');
+}
+
+#accountgooglecom {
+    background-image: url('https://ssl.gstatic.com/images/branding/product/1x/avatar_circle_blue_512dp.png');
+}
+
+#paygooglecom {
+    background-image: url('https://ssl.gstatic.com/images/branding/product/1x/android_pay_512dp.png');
+}
+
+/* Misc */
+
+#caineandrebekahcom {
+    background-image: url('https://www.google.com/s2/favicons?domain=www.caineandrebekah.com');
+}
+
+#iolshme {
+    background-image: url('https://www.google.com/s2/favicons?domain=i.olsh.me');
+}
+
+#tippyjs {
+    background-image: url('https://atomiks.github.io/tippyjs/icons/icon-48x48.png');
+}
+
+#carlosjeurissencom {
+    background-image: url('https://www.google.com/s2/favicons?domain=gicons.carlosjeurissen.com');
 }

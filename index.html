@@ -1,69 +1,52 @@
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hub</h1>
-    <div class='section'>
-      <h2>Content</h2>
-      <ul>
-        <a href="/technology.html"><li>Technology Tools</li></a>
-      </ul>
-    </div>
-    <div class='section'>
-      <h2>Google</h2>
-      <ul>
-        <a href="https://docs.google.com/" target="_blank"><li>docs.google.com</li></a>
-        <a href="https://sheets.google.com/" target="_blank"><li>sheets.google.com</li></a>
-        <a href="https://slides.google.com/" target="_blank"><li>slides.google.com</li></a>
-        <a href="https://drive.google.com/" target="_blank"><li>drive.google.com</li></a>
-        <a href="https://sites.google.com/" target="_blank"><li>sites.google.com</li></a>
-        <a href="https://remotedesktop.google.com/" target="_blank"><li>remotedesktop.google.com</li></a>
-        <a href="https://photos.google.com/" target="_blank"><li>photos.google.com</li></a>
-        <a href="https://messages.google.com/" target="_blank"><li>messages.google.com</li></a>
-        <a href="https://messages.android.com/" target="_blank"><li>messages.android.com</li></a>
-      </ul>
-    </div>
-    <div class='section'>
-      <h2>Social</h2>
-      <ul>
-        <a href="https://facebook.com/" target="_blank"><li>facebook.com</li></a>
-        <a href="https://instagram.com/" target="_blank"><li>instagram.com</li></a>
-        <a href="https://reddit.com/" target="_blank"><li>reddit.com</li></a>
-        <a href="https://linkedin.com/" target="_blank"><li>linkedin.com</li></a>
-      </ul>
-    </div>
-    <div class='section'>
-      <h2>Caine and Rebekah</h2>
-      <ul>
-        <a href="https://caineandrebekah.com/" target="_blank"><li>caineandrebekah.com</li></a>
-        <a href="https://docs.caineandrebekah.com/" target="_blank"><li>docs.caineandrebekah.com</li></a>
-        <a href="https://hub.caineandrebekah.com/" target="_blank"><li>hub.caineandrebekah.com</li></a>
-        <a href="https://home.caineandrebekah.com/" target="_blank"><li>home.caineandrebekah.com</li></a>
-      </ul>
-    </div>
-    <div class='section'>
-      <h2>Media</h2>
-      <ul>
-        <a href="/movies.html"><li>Movies</li></a>
-        <a href="/tv-shows.html"><li>TV Shows</li></a>
-        <a href="/music.html"><li>Music</li></a>
-        <a href="/photos.html"><li>Photos</li></a>
-      </ul>
-      <h2>Media Providers</h2>
-      <h3>Video</h3>
-      <ul>
-        <a href="https://netflix.com/" target="_blank"><li>netflix.com</li></a>
-        <a href="https://hulu.com/" target="_blank"><li>hulu.com</li></a>
-        <a href="https://plex.tv/" target="_blank"><li>plex.tv</li></a>
-        <a href="https://youtube.com/" target="_blank"><li>youtube.com</li></a>
-      </ul>
-      <h3>Audio</h3>
-      <ul>
-        <a href="https://music.youtube.com/" target="_blank"><li>music.youtube.com</li></a>
-        <a href="https://spotify.com/" target="_blank"><li>spotify.com</li></a>
-      </ul>
-    </div>
-  </body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+
+        <div class="nav" id="nav-left">
+            <div class="nav-dot" onclick='scrollBack(1)'>
+                <i class="material-icons">fast_rewind</i>
+            </div>
+        </div>
+        <div class="nav" id="nav-right">
+            <div class="nav-dot" onclick='scrollForward(1)'>
+                <i class="material-icons">fast_forward</i>
+            </div>
+        </div>
+        <div id='canvas'>
+
+            <div class='section'>
+                <div class='section-box'>
+                    <a href="https://caineandrebekah.com/" target="blank"><span class='tag' data-tippy="caineandrebekah.com"><div class='favicon' id='caineandrebekahcom'></div></span></a>
+                    <a href="https://mail.google.com/" target="blank"><span class='tag' data-tippy="mail.google.com"><div class='favicon' id='mailgooglecom'></div></span></a>
+                    <a href="https://drive.google.com/" target="blank"><span class='tag' data-tippy="drive.google.com"><div class='favicon' id='drivegooglecom'></div></span></a>
+                    <a href="https://admin.google.com/" target="blank"><span class='tag' data-tippy="admin.google.com"><div class='favicon' id='admingooglecom'></div></span></a>
+                    <a href="https://account.google.com/" target="blank"><span class='tag' data-tippy="account.google.com"><div class='favicon' id='accountgooglecom'></div></span></a>
+                    <a href="https://sites.google.com/" target="blank"><span class='tag' data-tippy="sites.google.com"><div class='favicon' id='sitesgooglecom'></div></span></a>
+                    <a href="https://pay.google.com/" target="blank"><span class='tag' data-tippy="pay.google.com"><div class='favicon' id='paygooglecom'></div></span></a>
+                    <a href="https://.com/" target="blank"><span class='tag' data-tippy=""><div class='favicon' id='alertsgooglecom'></div></span></a>
+                    <a href="https://.com/" target="blank"><span class='tag' data-tippy=""><div class='favicon' id='workgooglecom'></div></span></a>
+                </div>
+            </div><!--
+
+            --><div class='section'>
+                <div class='section-box'>
+                    <a href="https://gicons.carlosjeurissen.com/" target="blank"><span class='tag' data-tippy="gicons.carlosjeurissen.com (Google icons)"><div class='favicon' id='carlosjeurissencom'></div></span></a>
+                    <a href="https://i.olsh.me/icons/" target="blank"><span class='tag' data-tippy="i.olsh.me/icons (Search for cached icons)"><div class='favicon' id='iolshme'></div></span></a>
+                    <a href="https://atomiks.github.io/tippyjs/" target="blank"><span class='tag' data-tippy="atomiks.github.io/tippyjs"><div class='favicon' id='tippyjs'></div></span></a>
+                </div>
+            </div>
+        
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
+    <script src="data.js"></script>
+    <script src="scroll.js"></script>
 </html>
